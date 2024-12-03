@@ -1,0 +1,21 @@
+{
+    "name": "transfashion/synctbsales",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Transfashion\\Synctbsales\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Agung Nugroho",
+            "email": "agung@transfashionindonesia.com"
+        }
+    ],
+    "require": {
+        "agungdhewe/setingan": "^0.9.4",
+        "agungdhewe/phpsqlutil": "^1.2",
+        "agungdhewe/cli": "^1.0",
+        "agungdhewe/phplogger": "^1.1"
+    }
+}

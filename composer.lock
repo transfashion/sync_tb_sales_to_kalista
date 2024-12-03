@@ -1,0 +1,171 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "d4b8033aeeb285d3f5693c7c94be5143",
+    "packages": [
+        {
+            "name": "agungdhewe/cli",
+            "version": "v1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/agungdhewe/cli.git",
+                "reference": "6e9848edd9b2614056ce17a34eaf7c810a99eac5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/agungdhewe/cli/zipball/6e9848edd9b2614056ce17a34eaf7c810a99eac5",
+                "reference": "6e9848edd9b2614056ce17a34eaf7c810a99eac5",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "AgungDhewe\\Cli\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Agung Nugroho",
+                    "email": "agung_dhewe@yahoo.com"
+                }
+            ],
+            "support": {
+                "issues": "https://github.com/agungdhewe/cli/issues",
+                "source": "https://github.com/agungdhewe/cli/tree/v1.0"
+            },
+            "time": "2024-11-08T08:39:38+00:00"
+        },
+        {
+            "name": "agungdhewe/phplogger",
+            "version": "v1.1.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/agungdhewe/phplogger.git",
+                "reference": "9c39158d1053f240590cc23b3cf35778d79cbbdb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/agungdhewe/phplogger/zipball/9c39158d1053f240590cc23b3cf35778d79cbbdb",
+                "reference": "9c39158d1053f240590cc23b3cf35778d79cbbdb",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "AgungDhewe\\PhpLogger\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Agung Nugroho",
+                    "email": "agung.dhewe@gmail.com"
+                }
+            ],
+            "description": "logger untuk PHP",
+            "support": {
+                "issues": "https://github.com/agungdhewe/phplogger/issues",
+                "source": "https://github.com/agungdhewe/phplogger/tree/v1.1.8"
+            },
+            "time": "2024-11-06T04:15:18+00:00"
+        },
+        {
+            "name": "agungdhewe/phpsqlutil",
+            "version": "v1.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/agungdhewe/phpsqlutil.git",
+                "reference": "fc24fa403f7eb954a2e0f7f3d0951ecb6dbbb443"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/agungdhewe/phpsqlutil/zipball/fc24fa403f7eb954a2e0f7f3d0951ecb6dbbb443",
+                "reference": "fc24fa403f7eb954a2e0f7f3d0951ecb6dbbb443",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "AgungDhewe\\PhpSqlUtil\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Agung Nugroho",
+                    "email": "agung.dhewe@gmail.com"
+                }
+            ],
+            "description": "Utility for create SQL insert, update and delete",
+            "support": {
+                "issues": "https://github.com/agungdhewe/phpsqlutil/issues",
+                "source": "https://github.com/agungdhewe/phpsqlutil/tree/v1.2.2"
+            },
+            "time": "2024-10-16T13:21:54+00:00"
+        },
+        {
+            "name": "agungdhewe/setingan",
+            "version": "v0.9.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/agungdhewe/setingan.git",
+                "reference": "eeeea42fa006236325a537d6a9e7a916c607a677"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/agungdhewe/setingan/zipball/eeeea42fa006236325a537d6a9e7a916c607a677",
+                "reference": "eeeea42fa006236325a537d6a9e7a916c607a677",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "AgungDhewe\\Setingan\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Agung Nugrroho",
+                    "email": "agung.dhewe@gmail.com"
+                }
+            ],
+            "support": {
+                "issues": "https://github.com/agungdhewe/setingan/issues",
+                "source": "https://github.com/agungdhewe/setingan/tree/v0.9.4"
+            },
+            "time": "2024-11-26T03:07:22+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.2.0"
+}
