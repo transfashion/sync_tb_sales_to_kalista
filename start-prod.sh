@@ -4,7 +4,7 @@
 # Agung Nugroho <agung@transfashionindonesia.com>
 # Created at 5 Desember 2024
 
-cmd="php start.php --config=config-production.php"
+cmd="php ./start.php --config=config-production.php"
 
 echo "start sending data..."
 echo $cmd
