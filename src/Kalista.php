@@ -1,14 +1,35 @@
 <?php declare(strict_types=1);
 namespace Transfashion\Synctbsales;
 
+use AgungDhewe\Setingan\Config;
+
+
 final class Kalista {
 	public static final function SendData(string $data) : array {
 		try {
+			$kalistaConf = Config::Get('kalista');
+			if (empty($kalistaConf)) {
+				throw new \Exception("configuration for kalista connection not found");
+			}	
 
-			$endpoint = "https://kalista.localhost/api/Transfashion/KalistaApi/TransbrowserSales/SyncSales/Sync";
+			if (!array_key_exists('url', $kalistaConf)) {
+				throw new \Exception("kalista url is not configured");
+			}
 
-			$AppId = "transfashionid";
-			$AppSecret = "n3k4n2fdmf3fse";
+			if (!array_key_exists('appid', $kalistaConf)) {
+				throw new \Exception("kalista appid is not configured");
+			}
+
+			if (!array_key_exists('secret', $kalistaConf)) {
+				throw new \Exception("kalista secret is not configured");
+			}
+
+			$url = $kalistaConf['url'];
+			$endpoint = "$url/api/Transfashion/KalistaApi/TransbrowserSales/SyncSales/Sync";
+
+
+			$AppId = $kalistaConf['appid'];
+			$AppSecret = $kalistaConf['secret'];
 			$txid = uniqid();
 			$datetime = new \DateTime("now", new \DateTimeZone("UTC"));
 	

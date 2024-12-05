@@ -12,6 +12,12 @@ Config::Setup([
 		'DSN' => 'dblib:host=172.18.10.254;dbname=E_FRM2_BACKUP',
 		'user' => 'sa',
 		'pass' => 'meg@tower2018'	
+	],
+
+	'kalista' => [
+		'url' => 'https://kalista.transfashionindonesia.com',
+		'appid' => '',
+		'secret' => ''
 	]
 
 ]);
