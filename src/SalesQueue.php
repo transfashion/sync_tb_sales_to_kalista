@@ -45,8 +45,11 @@ final class SalesQueue {
 				self::$stmt_getpending = $conn->prepare($query);
 			}
 
+			Log::info("get pending queue ...");
 			self::$stmt_getpending->execute();
 			$rows = self::$stmt_getpending->fetchall();
+			$n = count($rows);
+			Log::info("found $n rows.");
 
 			return $rows;
 		} catch (\Exception $ex) {

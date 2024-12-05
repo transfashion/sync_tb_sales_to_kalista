@@ -17,6 +17,8 @@ final class Main {
 
 			$i=0;
 			$queue=SalesQueue::GetPending();
+			$n = count($queue);
+			Log::info("sending $n data");
 			while (count($queue) > 0) {
 				$i++;
 				if (self::MAX_ITTER>0 && $i>self::MAX_ITTER) {
