@@ -3,6 +3,7 @@ require_once join(DIRECTORY_SEPARATOR, [__DIR__, 'vendor', 'autoload.php']);
 
 use AgungDhewe\Cli\color;
 use AgungDhewe\Setingan\Config;
+use AgungDhewe\PhpLogger\Logger;
 
 
 use Transfashion\Synctbsales\Database;
@@ -29,6 +30,9 @@ try {
 	}
 	require_once $configPath;
 	
+
+	Logger::SetLogFilepath(join(DIRECTORY_SEPARATOR, [__DIR__,  'log.txt']));
+	Logger::SetDebugFilepath(join(DIRECTORY_SEPARATOR, [__DIR__,  'debug.txt']));
 
 	Database::Connect();
 	Main::run();
