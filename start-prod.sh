@@ -9,5 +9,5 @@ cmd="php $currdir/start.php --config=config-production.php"
 
 echo "start sending data..."
 echo $cmd
-#$cmd
+$cmd
 
