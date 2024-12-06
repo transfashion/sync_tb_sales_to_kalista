@@ -1,4 +1,5 @@
 <?php declare(strict_types=1);
+date_default_timezone_set('Asia/Jakarta');
 require_once join(DIRECTORY_SEPARATOR, [__DIR__, 'vendor', 'autoload.php']);
 
 use AgungDhewe\Cli\color;
