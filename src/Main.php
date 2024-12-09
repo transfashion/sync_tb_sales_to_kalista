@@ -62,7 +62,7 @@ final class Main {
 			$header = Bon::GetHeader($bon_id);
 			$items = Bon::GetItems($bon_id);
 			$payments = Bon::GetPayments($bon_id);
-			$report = Bon::GetReport($bon_id);			
+			$report = Bon::GetReport($bon_id, $header);			
 
 			$data = [
 				'header' => $header,

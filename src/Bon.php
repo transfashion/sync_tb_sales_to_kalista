@@ -82,7 +82,7 @@ final class Bon {
 	}
 
 
-	public static final function GetReport(string $bon_id) : array {
+	public static final function GetReport(string $bon_id, array $header) : array {
 		$conn = Database::GetConnection(Database::DB_MAIN);
 
 		try {
@@ -90,6 +90,18 @@ final class Bon {
 				$query = "EXEC SyncGetHeposDetil :bon_id";
 				self::$stmt_getreport = $conn->prepare($query);
 			}
+
+
+			// ambil data tax
+			$taxpercent = 0;
+			$bon_msaletax = $header['bon_msaletax'];
+			$bon_msalegross = $header['bon_msalegross'];
+			if ($bon_msalegross!=0) {
+				$taxpercent = round($bon_msaletax/$bon_msalegross);
+			}
+
+
+
 			self::$stmt_getreport->execute([':bon_id'=>$bon_id]);
 			$rows = self::$stmt_getreport->fetchall();
 			foreach ($rows as $row) {
